@@ -1,14 +1,12 @@
 <ion-view title="Ionic-Angular-Firebase Feed">
 	<ion-header-bar class="bar bar-subheader bar-light">
 		<h1 class="title">Feed</h1>
-		<button class="button buttons-right button-positive" ui-sref="post">
-			<i class="icon ion-ios7-plus"></i>
-		</button>
+		<button class="button button-clear button-positive icon ion-ios7-plus-outline" ui-sref="post"></button>
 	</ion-header-bar>
 	<ion-content>
 		<ion-list>
-		  <ion-item class="card" ng-repeat="post in posts">
-		    <div class="item item-text-wrap">
+		  <ion-item class="" ng-repeat="post in posts">
+		    <div class="item item-text-wrap item-positive">
 		      {{post.title}}
 		    </div>
 		  </ion-item>
