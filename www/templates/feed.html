@@ -1,11 +1,17 @@
-<ion-view title="Feed">  
-  <ion-content>
-    <ion-list>
-      <ion-item class="card" ng-repeat="post in posts">
-        <div class="item item-text-wrap">
-          {{post.title}}
-        </div>
-      </ion-item>
-    </ion-list>
-  </ion-content>     
-</ion-view>
+<ion-view title="Ionic-Angular-Firebase Feed">
+	<ion-header-bar class="bar bar-subheader bar-light">
+		<h1 class="title">Feed</h1>
+		<button class="button button-clear button-positive icon ion-ios7-plus-outline" ui-sref="post"></button>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+		  <ion-item class="" ng-repeat="post in posts">
+		    <div class="item item-text-wrap item-positive">
+		      {{post.title}}
+		    </div>
+		  </ion-item>
+		</ion-list>
+		<br />
+		<br />
+	</ion-content>   
+</ion-view>  

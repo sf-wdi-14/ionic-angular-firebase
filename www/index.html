@@ -30,6 +30,15 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="starter">
+    <ion-nav-bar class="bar bar-header bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <h1 class="title">Ionic-Angular-Firebase Feed</h1>
+      <div class="buttons">
+        <button class="buton button-positive">
+          <i class="icon ion-ios-plus-outline"></i>
+        </button>
+      </div>
+    </ion-nav-bar>
     <!-- Yield to templates -->
     <ion-nav-view></ion-nav-view>
     <!-- Nav bar -->
@@ -37,7 +46,7 @@
       <ion-tab title="Feed" icon-off="ion-ios7-pulse" icon-on="ion-ios7-pulse" href="#/feed">
         <ion-nav-view name="feed"></ion-nav-view>
       </ion-tab>
-      <ion-tab title="Post" icon-off="ion-ios7-compose" icon-on="ion-ios7-compose" href="#/post">
+      <ion-tab title="Post" icon-off="ion-ios7-compose-outline" icon-on="ion-ios7-compose" href="#/post">
         <ion-nav-view name="post"></ion-nav-view>
       </ion-tab>
     </ion-tabs>
